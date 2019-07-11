@@ -12,18 +12,21 @@
 <body>
 
     <div id="divInput">
-        <input id="input" type="text" placeholder="------>>>>     Choose your team  <<<<<-------">
-        <button id="button" onclick=renderr()> CLICK </button>
+        <input id="input" type="text" placeholder="Choose your city">
+        <button id="button" onclick = handleSearch() > Search </button>
     </div>
 
+    
     <script id="template" type="text/x-handlebars-template">
         {{#each data}}
             <div class = "city">
-                <p class="cityname">{{name}}</p>
-                <p class="temperature">{{temperature}}</p>
+                <h2 class="cityname">{{name}}</h2>
+                <p class="temperature">{{temperature}}c</p>
                 <p class="conditions">{{condition}}</p>
-                <p class="last updated">{{updatedAt}}</p>
+                <p class="updated">{{updatedAt}}</p>
                 <img class="img" src="{{conditionPic}}">
+                <button  class= "savebutton" >SAVE</button>
+                <button class= "deletebutton" >DELETE</button>
             </div>
         {{/each}}
 

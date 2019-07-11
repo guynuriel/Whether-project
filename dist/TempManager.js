@@ -1,48 +1,48 @@
-import { url } from "inspector";
+
 
 
 class TempManager {
     constructor() {
-        this.cityData = []
+    this.cityData = []
     }
     async getDataFromDB() {
-        await $.get('/cities',function(req,res){
-            let data = req
-            this.Cityname.push(data)
-            res.end()
+        let data = await $.get('/cities',function(res){
+         return  res
         })
-
+    data.forEach(d => this.cityData.push(d));
     }
-    async getCityData(cityName) {
-        await $.get(`/city/${cityName}`,function(req,res){
-            cityData.push({
-            Cityname: req.name,
-            Temperature : req.Temperature,
-            Conditions : req.Conditions,
-            Conditionicon : req.ConditionpIC,
-            lastupdated : req.updatedAT
-            })
-        })
 
+    
+    async getCityData(cityName) {
+
+        const res = await $.get(`/city/${cityName}`)
+            let x = {
+            name: res.location.name,
+            temperature : res.current.temp_c,
+            condition : res.current.condition.text,
+            conditionPic : res.current.condition.icon,
+            updatedAt : res.current.last_updated
+            }
+        this.cityData.push(x)
        
 
     }
-    async saveCity(cityName) {
-        const cityD = await this.cityData.find(c => c.Name == cityName)
-        await $.post('/city', cityD)
+        saveCity(cityName) {
+        const cityD =this.cityData.find(c => c.name === cityName)
+         $.post('/city', cityD ,function(data,status){
+            console.log("status:",status)
+            console.log('data:',data)
+        })
     }
 
 
     removeCity(cityName) {
-        $ajax({
-            method:"delete",
+        $.ajax({
+            method:"DELETE",
             url:`http://localhost:3000/city/${cityName}` ,
             success: function(data){
                 console.log(data)
             },
-            error:function(xhr,text,err){
-            
-            }
         })
     }
 
@@ -50,4 +50,3 @@ class TempManager {
 
 
 
-// TempManager.getDataFromDB()

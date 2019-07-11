@@ -7,12 +7,8 @@ const City = require("./City")
 
 router.get("/city/:cityname", function (req, res) {
     const cityname = req.params.cityname
-    request(`https://api.apixu.com/v1/current.json?key=7429b875967441fc8de112701191007&q=${cityname}`, function (error, response) {
-        let data = JSON.parse(response.body)
-        // data = data.filter(d => d.teamId == teamToIDs[teamName])
-        // data = data.filter(d => d.isActive == true)
-        // let players = data.map(d => { return { firstName: d.firstName, lastName: d.lastName, jersey: d.jersey, pos: d.pos } })
-        
+    request(`https://api.apixu.com/v1/current.json?key=7429b875967441fc8de112701191007&q=${cityname}`, function (error, response,body) {
+        let data = JSON.parse(body)
         res.send(data)
     })
 
