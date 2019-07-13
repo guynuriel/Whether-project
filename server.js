@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express()
 var path = require('path')
-var request = require('request')
 var mongoose = require('mongoose')
 const api = require('./server/api')
 
@@ -17,7 +16,7 @@ app.use('/', api)
 
 const port = process.env.port|| 3000
 app.listen(port, function() {
-    console.log("Server up and running on port 3000")
+    console.log(`Server up and running on port ${port}`)
   })
   
   
