@@ -12,8 +12,8 @@ app.use('/', api)
 
 
 
-const port = process.env.PORT|| 3000
-app.listen(port, function() {
+const port =  3000
+app.listen(process.env.PORT||port, function() {
     console.log(`Server up and running on port ${port}`)
   })
   
