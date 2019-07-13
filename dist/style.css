@@ -46,6 +46,11 @@ body{
     top: 5px;
     left: 30px;
 }
+
+#h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
 .img{
     position: absolute;
     right: 10px;
