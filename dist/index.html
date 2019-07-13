@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>wether appliction</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -21,10 +22,10 @@
         {{#each data}}
             <div class = "city">
                 <h2 class="cityname">{{name}}</h2>
+                <img class="img" src="{{conditionPic}}">
                 <p class="temperature">{{temperature}}c</p>
                 <p class="conditions">{{condition}}</p>
                 <p class="updated">{{updatedAt}}</p>
-                <img class="img" src="{{conditionPic}}">
                 <button  class= "savebutton" >SAVE</button>
                 <button class= "deletebutton" >DELETE</button>
             </div>

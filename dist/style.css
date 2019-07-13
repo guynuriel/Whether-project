@@ -1,0 +1,95 @@
+body{
+    background-image:url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+}
+
+
+#divInput{
+    margin-top: 20px;
+    width: 400px;
+    display: inline-block;
+
+}
+
+
+#input{
+    background-image:url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    width: 300px;
+    margin-left: 10px;
+    border-radius: 20px;  
+
+}
+
+#button{
+    cursor: pointer;
+    border-radius: 15px;
+    background-image:url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+
+}
+
+#button:active{
+    background-color:rgb(16, 213, 248)}
+
+.city{
+    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    /* align-items: center; */
+    margin: 50px;
+    margin-left: 80px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 1px 2px 9px #999;
+    position: relative;
+    height: 200px;
+    width: 200px;
+ }
+.cityname{
+    position:absolute;
+    top: 5px;
+    left: 30px;
+}
+.img{
+    position: absolute;
+    right: 10px;
+    top: 80px 
+ }
+
+.temperature{
+    position: absolute;
+    left: 30px;
+    top: 80px;
+    font-size: 1.5em;
+    
+}
+
+.conditions{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+ 
+
+.updated{
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 0.5em;
+}
+
+
+
+
+
+.savebutton{
+    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    border-radius: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.deletebutton{
+    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
