@@ -39,7 +39,7 @@ class TempManager {
     removeCity(cityName) {
         $.ajax({
             method:"DELETE",
-            url:`http://localhost:3000/city/${cityName}` ,
+            url:`/city/${cityName}` ,
             success: function(data){
                 console.log(data)
             },
