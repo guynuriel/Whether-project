@@ -1,5 +1,5 @@
 body{
-    background-image:url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    background-image:url('https://3yecy51kdipx3blyi37oute1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/bg-clouds.jpg');
 }
 
 
@@ -12,13 +12,18 @@ body{
 
 
 #input{
-    background-image:url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    background-image:url('https://3yecy51kdipx3blyi37oute1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/bg-clouds.jpg');
     width: 300px;
     margin-left: 10px;
     border-radius: 20px;  
 
 }
-
+h1{
+    color: rgb(170, 170, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    text-align: center;
+}
 #button{
     cursor: pointer;
     border-radius: 15px;
@@ -30,7 +35,7 @@ body{
     background-color:rgb(16, 213, 248)}
 
 .city{
-    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    background-image: url('https://3yecy51kdipx3blyi37oute1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/bg-clouds.jpg');
     /* align-items: center; */
     margin: 50px;
     margin-left: 80px;
@@ -84,7 +89,7 @@ body{
 
 
 .savebutton{
-    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    background-image: url('https://3yecy51kdipx3blyi37oute1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/bg-clouds.jpg');
     border-radius: 10px;
     position: absolute;
     left: 5px;
@@ -92,7 +97,7 @@ body{
 }
 
 .deletebutton{
-    background-image: url('http://www.sharebyme.com/wp-content/uploads/2017/01/clody-sky.jpg');
+    background-image: url('https://3yecy51kdipx3blyi37oute1-wpengine.netdna-ssl.com/wp-content/uploads/2019/01/bg-clouds.jpg');
     border-radius: 10px;
     position: absolute;
     right: 5px;
